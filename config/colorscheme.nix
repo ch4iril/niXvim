@@ -10,5 +10,10 @@
   colorschemes.onedark.enable = true;
   colorschemes.tokyonight.enable = true;
   colorschemes.vscode.enable = true;
+  colorschemes.base16.enable = true;
+  colorschemes.nightfox.enable = true;
+  colorschemes.oxocarbon.enable = true;
+  colorschemes.nord.enable = true;
+  colorschemes.palette.enable = true;
 
 }
