@@ -20,7 +20,7 @@
      ./colorscheme.nix
      ./treesitter.nix
      ./tools.nix
-     ./which-key
+     ./which-key.nix
 
 
 
