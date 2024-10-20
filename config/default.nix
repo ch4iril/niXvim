@@ -25,7 +25,7 @@
      ./neo-tree.nix
      ./airline.nix
      ./autosave.nix
-
+     ./alpha.nix
 
 
 
