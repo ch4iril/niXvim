@@ -28,7 +28,7 @@
      ./alpha.nix
      ./snipp.nix
      ./dashboard.nix
-
+     ./clipboard.nix
 
 
   ];
