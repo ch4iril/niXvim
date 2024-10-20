@@ -19,5 +19,12 @@
      ./lsp.nix
      ./colorscheme.nix
      ./treesitter.nix
+     ./tools.nix
+     ./which-key
+
+
+
+
+
   ];
 }
