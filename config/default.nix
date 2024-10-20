@@ -1,4 +1,22 @@
 {
   # Import all your configuration modules here
-  imports = [ ./bufferline.nix ];
+  imports = [ 
+   
+    {
+     config = { 
+        opts = {
+           number = true;
+           relativenumber = true;
+           shiftwidth = 2;
+    
+        };
+
+      };
+ 
+    }
+
+     ./bufferline.nix
+
+
+  ];
 }
