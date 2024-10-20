@@ -16,6 +16,7 @@
     }
 
      ./bufferline.nix
+     ./lsp.nix
 
 
   ];
