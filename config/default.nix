@@ -23,6 +23,8 @@
      ./which-key.nix
      ./yanky.nix
      ./neo-tree.nix
+     ./airline.nix
+     ./autosave.nix
 
 
 
