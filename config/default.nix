@@ -21,6 +21,7 @@
      ./treesitter.nix
      ./tools.nix
      ./which-key.nix
+     ./yanky.nix
 
 
 
