@@ -1,5 +1,35 @@
-{
 
-   plugins.treesitter.enable = true;
-   plugins.treesitter.folding = false;
+
+#{ pkgs, ...}:{
+#
+#plugins.treesitter.package = {
+#   plugins.treesitter.enable = true;
+#   extraPlugins = pkgs.vimPlugins.nvim-treesitter;
+# };
+#}
+
+{ pkgs, ...}:{
+
+  plugins.treesitter = {
+    enable = true;
+
+    grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+      bash
+      json
+      lua
+      make
+      markdown
+      nix
+      regex
+      toml
+      vim
+      vimdoc
+      xml
+      yaml
+      typescript
+      javascript
+      dart
+    ];
+  };
 }
+

@@ -1,4 +1,4 @@
-# Nixvim template
+# Nixvim Standalone
 
 This template gives you a good starting point for configuring nixvim standalone.
 
@@ -19,7 +19,17 @@ nix run .
 
 
 
-note:
+
+Require :
+
+- Sudah terinstall nix atau nixos maupun nix darwin
+- System x86_64-linux | aarch64-linux | x86_64-darwin | aarch64-darwin 
+
+
+
+
+
+
 Jika ada kesulitan, silahkan baca dokumentasinya di 
 https://nix-community.github.io/nixvim
 

@@ -31,7 +31,6 @@
      ./clipboard.nix
      ./fzf.nix
      ./dashsettings.nix
-     ./nixGrammars.nix
 
   ];
 }
