@@ -22,6 +22,7 @@
      ./tools.nix
      ./which-key.nix
      ./yanky.nix
+     ./neo-tree.nix
 
 
 
