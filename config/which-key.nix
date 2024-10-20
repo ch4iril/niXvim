@@ -1,7 +1,8 @@
 
-
-{
-
-  plugins.which-key.enable = true;
+{pkgs, ...}:{
+    plugins.which-key.package = {
+    which-key.enable = true;
+    extraPlugins = pkgs.vimPlugins.which-key-nvim;
+  };
 
 }

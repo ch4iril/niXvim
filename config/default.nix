@@ -26,8 +26,8 @@
      ./airline.nix
      ./autosave.nix
      ./alpha.nix
-     ./dashboard.nix
      ./snipp.nix
+     ./dashboard.nix
 
 
 
