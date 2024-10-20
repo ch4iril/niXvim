@@ -29,7 +29,7 @@
      ./snipp.nix
      ./dashboard.nix
      ./clipboard.nix
-
+     ./fzf.nix
 
   ];
 }
