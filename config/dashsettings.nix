@@ -5,7 +5,7 @@
  plugins.dashboard.settings = 
 
 {
-  change_to_vcs_root = true;
+  change_to_vcs_root = false;
   config = {
     footer = [
       "Made with ❤️"

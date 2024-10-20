@@ -1,10 +1,12 @@
 
 
-{ pkgs, ... }:{
- 
-   plugins.airline = {
-   enable = true;
-   package = pkgs.vimPlugins.vim-airline-themes;
+{
+  plugins.airline.enable = true;
+  plugins.airline.settings.theme = null;
 
-   };
 }
+
+
+
+
+
