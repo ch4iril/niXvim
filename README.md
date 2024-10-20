@@ -14,4 +14,22 @@ To test your configuration simply run the following command
 
 ```
 nix run .
+
+
+
+
+
+note:
+Jika ada kesulitan, silahkan baca dokumentasinya di 
+https://nix-community.github.io/nixvim
+
+jika ada keinginan, pasti bisa!!
+
+
+thanks
+
+
+
+
+
 ```
