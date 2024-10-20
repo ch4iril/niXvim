@@ -1,10 +1,8 @@
-{ pkgs, ...}:{
+{ pkgs, ... }:{
 
-    plugins.auto-save.package = {
-       plugins.auto-save.enable = true;
-       extraPlugins = pkgs.vimPlugins.auto-save-nvim;
+      plugins.auto-save = {
+       enable = true;
+       package = pkgs.vimPlugins.auto-save-nvim;
     
     };
-
-
 }

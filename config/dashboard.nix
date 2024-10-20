@@ -1,8 +1,8 @@
 {pkgs, ...}:{
 
-  plugins.dashboard.package = {
-    plugins.dashboard.enable = true;
-    extraPlugins = pkgs.vimPlugins.dashboard-nvim;
+    plugins.dashboard = {
+    enable = true;
+    package = pkgs.vimPlugins.dashboard-nvim;
 
  };
 }
