@@ -18,5 +18,6 @@
      ./bufferline.nix
      ./lsp.nix
      ./colorscheme.nix
+     ./treesitter.nix
   ];
 }
