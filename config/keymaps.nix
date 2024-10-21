@@ -6,7 +6,7 @@
     {
       mode = "n";
       key = "<leader>e";
-      action = "<cmd>Neotree toggle show buffers left<cr>";
+      action = "<cmd>Neotree action=show source=buffer position=left toggle=true<cr>";
       options = {
         desc = "Neo Tree open";
       };

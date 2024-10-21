@@ -25,7 +25,7 @@
      ./neo-tree.nix
      ./airline.nix
      ./autosave.nix
-     ./alpha.nix
+     #./alpha.nix
      ./snipp.nix
      ./clipboard.nix
      ./fzf.nix
@@ -34,6 +34,7 @@
      ./windowpicker.nix
      ./nvim-tree.nix
      ./toggleterm.nix
+     ./dashboard.nix
 
   ];
 }
