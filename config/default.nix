@@ -30,7 +30,6 @@
      ./dashboard.nix
      ./clipboard.nix
      ./fzf.nix
-     ./highlight.nix
 
   ];
 }
