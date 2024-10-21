@@ -5,4 +5,5 @@
   plugins.dashboard = {
     package = pkgs.vimPlugins.dashboard-nvim;
   };
+
 }

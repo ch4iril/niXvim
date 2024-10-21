@@ -32,6 +32,8 @@
      ./keymaps.nix
      ./lualine.nix
      ./windowpicker.nix
+     ./nvim-tree.nix
+     ./toggleterm.nix
 
   ];
 }
