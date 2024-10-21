@@ -30,6 +30,7 @@
      ./dashboard.nix
      ./clipboard.nix
      ./fzf.nix
+     ./keymaps.nix
 
   ];
 }
