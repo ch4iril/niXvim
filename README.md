@@ -20,13 +20,15 @@ nix run .
 
 
 
-Require :
+Requirement :
 
-- Sudah terinstall nix atau nixos maupun nix darwin
-- System x86_64-linux | aarch64-linux | x86_64-darwin | aarch64-darwin 
+- Device sudah terinstall nix, nix-darwin atau nixos
+- Device system x86_64-linux | aarch64-linux | x86_64-darwin | aarch64-darwin 
 
 
+seandainya ingin mencoba saja, silahkan gunakan cara seperti dibawah ini!
 
+     nix run 'github:ch4iril/niXvim'
 
 
 
