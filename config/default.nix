@@ -27,10 +27,11 @@
      ./autosave.nix
      ./alpha.nix
      ./snipp.nix
-     ./dashboard.nix
      ./clipboard.nix
      ./fzf.nix
      ./keymaps.nix
+     ./lualine.nix
+     ./windowpicker.nix
 
   ];
 }

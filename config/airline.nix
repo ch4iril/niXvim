@@ -2,7 +2,7 @@
 
 {
   plugins.airline.enable = true;
-  plugins.airline.settings.theme = null;
+        plugins.airline.settings.theme = null;
 
 }
 

@@ -5,29 +5,47 @@
     # General maps
     {
       mode = "n";
-      key = "<leader>/";
-      action = "<cmd>nohl<CR>";
+      key = "<leader>e";
+      action = "<cmd>Neotree<cr>";
       options = {
-        desc = "Clear search";
+        desc = "Neo Tree";
       };
     }
     {
       mode = "n";
-      key = "<leader>f";
-      action = "+find/file";
+      key = "<leader>n";
+      action = "<cmd>Neotree position=current toggle<cr>";
       options = {
-        desc = "+file/file";
+        desc = "Close";
       };
     }
     {
       mode = "n";
-      key = "<leader>s";
-      action = "+search";
+      key = "<leader>r";
+      action = "<cmd>lua vim.lsp.buf.format()<cr>";
       options = {
-        desc = "+search";
+        desc = "Format save";
       };
     }
 
+    {
+      mode = "n";
+      key = "<leader>s";
+      action = "<C-s>";
+      options = {
+        desc = "Save";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<leader>f";
+      action = "<cmd>Telescope find_files<cr>";
+      options = {
+        desc = "find file";
+      };
+    }
+   
     {
       mode = "n";
       key = "<leader>q";
@@ -455,4 +473,3 @@
             end
   '';
 }
-

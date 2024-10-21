@@ -1,75 +1,8 @@
 {pkgs, ...}:{
 
-
-plugins.alpha.enable= true;
-#package = pkgs.vimPlugins.alpha-nvim;
-plugins.alpha.layout = [
-
-{
-    type = "padding";
-    val = 2;
-  }
-  {
-    opts = {
-      hl = "Type";
-      position = "center";
-    };
-    type = "text";
-    val = [
-      "███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"
-      "████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
-      "██╔██╗ ██║██║ ╚███╔╝ ██║   ██║██║██╔████╔██║"
-      "██║╚██╗██║██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║"
-      "██║ ╚████║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║"
-      "╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝"
-    ];
-  }
-  {
-    type = "padding";
-    val = 2;
-  }
-  {
-    type = "group";
-    val = [
-      {
-        on_press = {
-          __raw = "function() vim.cmd[[ene]] end";
-        };
-        opts = {
-          shortcut = "n";
-        };
-        type = "button";
-        val = "  New file";
-      }
-      {
-        on_press = {
-          __raw = "function() vim.cmd[[qa]] end";
-        };
-        opts = {
-          shortcut = "q";
-        };
-        type = "button";
-        val = " Quit Neovim";
-      }
-    ];
-  }
-  {
-    type = "padding";
-    val = 2;
-  }
-  {
-    opts = {
-      hl = "Keyword";
-      position = "center";
-    };
-    type = "text";
-    val = "Yuuu ahhh...................";
-    }
-
-  ];
-
- 
-
+  plugins.alpha.enable = true;
+  plugins.alpha.theme = "theta";
+  plugins.dashboard = {
+    package = pkgs.vimPlugins.dashboard-nvim;
+  };
 }
-
-
