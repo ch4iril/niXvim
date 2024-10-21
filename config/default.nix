@@ -35,6 +35,7 @@
      ./nvim-tree.nix
      ./toggleterm.nix
      ./dashboard.nix
+     ./transparent.nix
 
   ];
 }

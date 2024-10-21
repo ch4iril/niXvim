@@ -5,16 +5,34 @@
     # General maps
     {
       mode = "n";
+      key = "<leader>i";
+      action = "<cmd>ene<cr>";
+      options = {
+        desc = "New file";
+      };
+    }
+     
+     {
+      mode = "n";
       key = "<leader>e";
-      action = "<cmd>Neotree action=show source=buffer position=left toggle=true<cr>";
+      action = "<cmd>Neotree action=show source=filesystem position=right toggle=false<cr>";
       options = {
         desc = "Neo Tree open";
       };
     }
     {
       mode = "n";
+      key = "<leader>h";
+      action = "<cmd>Neotree float git_status<cr>";
+      options = {
+        desc = "Neo tree git status";
+      };
+    }
+
+    {
+      mode = "n";
       key = "<leader>n";
-      action = "<cmd>Neotree action=off source=buffers position=left toggle=true<cr>";
+      action = "<cmd>Neotree action=off source=filesystem position=right toggle=true<cr>";
       options = {
         desc = "Neo tree close";
       };
@@ -52,7 +70,7 @@
       key = "<leader>f";
       action = "<cmd>Telescope find_files<cr>";
       options = {
-        desc = "find file";
+        desc = "Find file";
       };
     }
     {

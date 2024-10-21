@@ -10,24 +10,12 @@
         {
           type = "text";
           val = [
-            "      █████ █     ██"
-            "   ██████  ██    ████ █                                 █"
-            "  ██   █  █ ██    ████                    ██           ███"
-            " █    █  █  ██    █ █                     ██            █"
-            "     █  █    ██   █                ████    ██    ███"
-            "    ██ ██    ██   █       ███     █ ███  █  ██    ███ ███    ███ ████ ████"
-            "    ██ ██     ██  █      █ ███   █   ████   ██     ███ ███    ███ ████ ███  █"
-            "    ██ ██     ██  █     █   ███ ██    ██    ██      ██  ██     ██  ████ ████"
-            "    ██ ██      ██ █    ██    █████    ██    ██      ██  ██     ██   ██   ██"
-            "    ██ ██      ██ █    ████████ ██    ██    ██      ██  ██     ██   ██   ██"
-            "    █  ██       ███    ███████  ██    ██    ██      ██  ██     ██   ██   ██"
-            "       █        ███    ██       ██    ██    ██      █   ██     ██   ██   ██"
-            "   ████          ██    ████    █ ██████      ███████    ██     ██   ██   ██"
-            "  █  █████              ███████   ████        █████     ███ █  ███  ███  ███"
-            " █     ██                █████                           ███    ███  ███  ███"
-            " █"
-            "  █"
-            "   ██"
+      "███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"
+      "████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
+      "██╔██╗ ██║██║ ╚███╔╝ ██║   ██║██║██╔████╔██║"
+      "██║╚██╗██║██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║"
+      "██║ ╚████║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║"
+      "╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝"
           ];
           opts = {
             position = "center";
@@ -75,7 +63,7 @@
                 keymap = [
                   "n"
                   "f"
-                  "<cmd>lua require('fzf-lua').files({ cwd = vim.loop.cwd() })<CR>"
+                  "<cmd>Telescope find_files<cr>"
                   {
                     noremap = true;
                     silent = true;
@@ -92,29 +80,7 @@
               type = "padding";
               val = 2;
             }
-            {
-              type = "button";
-              val = "      Recent Files    ";
-              on_press.__raw = "function() require('telescope.builtin').oldfiles() end";
-              opts = {
-                shortcut = "r";
-                keymap = [
-                  "n"
-                  "r"
-                  "<cmd>lua require('fzf-lua').oldfiles({ cwd = vim.loop.cwd() })<CR>"
-                  {
-                    noremap = true;
-                    silent = true;
-                    nowait = true;
-                  }
-                ];
-                position = "center";
-                width = 50;
-                align_shortcut = "right";
-                hl_shortcut = "Keyword";
-              };
-            }
-            {
+                        {
               type = "padding";
               val = 2;
             }
@@ -127,7 +93,7 @@
                 keymap = [
                   "n"
                   "g"
-                  "<cmd>lua require('fzf-lua').live_grep()<CR>"
+                  "<cmd>Telescope live_grep<cr>"
                   {
                     noremap = true;
                     silent = true;
