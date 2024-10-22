@@ -41,7 +41,7 @@
     {
       mode = "n";
       key = "<leader>t";
-      action = "<cmd>ToggleTerm direction=vertical<cr>";
+      action = "<cmd>ToggleTerm direction=float<cr>";
       options = {
         desc = "Toggleterm";
       };

@@ -25,17 +25,16 @@
      ./neo-tree.nix
      ./airline.nix
      ./autosave.nix
-     #./alpha.nix
      ./snipp.nix
      ./clipboard.nix
      ./fzf.nix
      ./keymaps.nix
      ./lualine.nix
-     ./windowpicker.nix
      ./nvim-tree.nix
      ./toggleterm.nix
      ./dashboard.nix
      ./transparent.nix
+     ./semantictokens.nix
 
   ];
 }

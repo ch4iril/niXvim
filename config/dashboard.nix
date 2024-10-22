@@ -1,141 +1,57 @@
+{ pkgs, ... }:
 {
-  plugins = {
-    alpha = {
-      enable = true;
-      layout = [
-        {
-          type = "padding";
-          val = 2;
-        }
-        {
-          type = "text";
-          val = [
+
+  plugins.dashboard.enable = true;
+  plugins.dashboard = {
+    package = pkgs.vimPlugins.dashboard-nvim;
+  };
+
+  plugins.dashboard.settings.theme = "doom";
+
+  plugins.dashboard.settings.config.header =
+
+    [
+
       "███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"
       "████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
       "██╔██╗ ██║██║ ╚███╔╝ ██║   ██║██║██╔████╔██║"
       "██║╚██╗██║██║ ██╔██╗ ╚██╗ ██╔╝██║██║╚██╔╝██║"
       "██║ ╚████║██║██╔╝ ██╗ ╚████╔╝ ██║██║ ╚═╝ ██║"
       "╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝"
-          ];
-          opts = {
-            position = "center";
-            hl = "Type";
-          };
-        }
-        {
-          type = "padding";
-          val = 4;
-        }
-        {
-          type = "group";
-          val = [
-            {
-              type = "button";
-              val = "      New File    ";
-              on_press.__raw = "function() vim.cmd[[ene]] end";
-              opts = {
-                shortcut = "n";
-                keymap = [
-                  "n"
-                  "n"
-                  "<cmd>ene<CR>"
-                  {
-                    noremap = true;
-                    silent = true;
-                    nowait = true;
-                  }
-                ];
-                position = "center";
-                width = 50;
-                align_shortcut = "right";
-                hl_shortcut = "Keyword";
-              };
-            }
-            {
-              type = "padding";
-              val = 2;
-            }
-            {
-              type = "button";
-              val = "      Find File    ";
-              opts = {
-                shortcut = "f";
-                keymap = [
-                  "n"
-                  "f"
-                  "<cmd>Telescope find_files<cr>"
-                  {
-                    noremap = true;
-                    silent = true;
-                    nowait = true;
-                  }
-                ];
-                position = "center";
-                width = 50;
-                align_shortcut = "right";
-                hl_shortcut = "Keyword";
-              };
-            }
-            {
-              type = "padding";
-              val = 2;
-            }
-                        {
-              type = "padding";
-              val = 2;
-            }
-            {
-              type = "button";
-              val = "      Find Text    ";
-              on_press.__raw = "function() require('telescope.builtin').live_grep() end";
-              opts = {
-                shortcut = "g";
-                keymap = [
-                  "n"
-                  "g"
-                  "<cmd>Telescope live_grep<cr>"
-                  {
-                    noremap = true;
-                    silent = true;
-                    nowait = true;
-                  }
-                ];
-                position = "center";
-                width = 50;
-                align_shortcut = "right";
-                hl_shortcut = "Keyword";
-              };
-            }
-            {
-              type = "padding";
-              val = 2;
-            }
-            {
-              type = "button";
-              val = "      Quit Neovim    ";
-              on_press.__raw = "function() vim.cmd[[qa]] end";
-              opts = {
-                shortcut = "q";
-                keymap = [
-                  "n"
-                  "q"
-                  "<cmd>qa<CR>"
-                  {
-                    noremap = true;
-                    silent = true;
-                    nowait = true;
-                  }
-                ];
-                position = "center";
-                width = 50;
-                align_shortcut = "right";
-                hl_shortcut = "Keyword";
-              };
-            }
-          ];
-        }
-      ];
-    };
-  };
-}
 
+    ];
+
+  plugins.dashboard.settings.config.center =
+
+    [
+
+      {
+        action = {
+          __raw = "function(path) vim.cmd('Telescope find_files') end";
+        };
+        desc = "Files";
+        group = "Label";
+        icon = " ";
+        icon_hl = "@variable";
+        key = "f";
+      }
+      {
+        action = {
+          __raw = "function(path) vim.cmd('ene') end";
+        };
+        desc = "New Files";
+        group = "Label";
+        icon = " ";
+        icon_hl = "@variable";
+        key = "n";
+      }
+
+    ];
+
+  plugins.dashboard.settings.config.week_header.enable = false;
+
+  plugins.dashboard.settings.hide.statusline = false;
+
+  plugins.dashboard.settings.hide.tabline = false;
+
+}
