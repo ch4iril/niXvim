@@ -2,8 +2,11 @@
 {
 
   plugins.dashboard.enable = true;
+
   plugins.dashboard = {
+
     package = pkgs.vimPlugins.dashboard-nvim;
+
   };
 
   plugins.dashboard.settings.theme = "doom";

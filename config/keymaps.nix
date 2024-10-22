@@ -11,8 +11,8 @@
         desc = "New file";
       };
     }
-     
-     {
+
+    {
       mode = "n";
       key = "<leader>e";
       action = "<cmd>Neotree action=show source=filesystem position=right toggle=false<cr>";
@@ -20,6 +20,15 @@
         desc = "Neo Tree open";
       };
     }
+    {
+      mode = "n";
+      key = "<leader>o";
+      action = "<cmd>Oil<cr>";
+      options = {
+        desc = "Oil";
+      };
+    }
+
     {
       mode = "n";
       key = "<leader>h";
@@ -90,19 +99,6 @@
         desc = "+quit/session";
       };
     }
-
-    {
-      mode = [
-        "n"
-        "v"
-      ];
-      key = "<leader>g";
-      action = "+git";
-      options = {
-        desc = "+git";
-      };
-    }
-
     {
       mode = "n";
       key = "<leader>u";
@@ -136,9 +132,9 @@
         "v"
       ];
       key = "<leader>c";
-      action = "+code";
+      action = "<cmd>lua vim.lsp.buf.code.action<cr>";
       options = {
-        desc = "+code";
+        desc = "+code action";
       };
     }
 
@@ -404,6 +400,7 @@
         desc = "Previous buffer";
       };
     }
+
   ];
   extraConfigLua = ''
     function ToggleLineNumber()

@@ -1,40 +1,49 @@
 {
   # Import all your configuration modules here
-  imports = [ 
-   
+  imports = [
+
     {
-     config = { 
+      config = {
         opts = {
-           number = true;
-           relativenumber = true;
-           shiftwidth = 2;
-    
+          number = true;
+          relativenumber = true;
+          shiftwidth = 2;
+
         };
 
       };
- 
+
     }
 
-     ./bufferline.nix
-     ./lsp.nix
-     ./colorscheme.nix
-     ./treesitter.nix
-     ./tools.nix
-     ./which-key.nix
-     ./yanky.nix
-     ./neo-tree.nix
-     ./airline.nix
-     ./autosave.nix
-     ./snipp.nix
-     ./clipboard.nix
-     ./fzf.nix
-     ./keymaps.nix
-     ./lualine.nix
-     ./nvim-tree.nix
-     ./toggleterm.nix
-     ./dashboard.nix
-     ./transparent.nix
-     ./semantictokens.nix
+    ./bufferline.nix
+    ./lsp.nix
+    ./colorscheme.nix
+    ./treesitter.nix
+    ./tools.nix
+    ./which-key.nix
+    ./yanky.nix
+    ./neo-tree.nix
+    ./airline.nix
+    ./autosave.nix
+    ./snipp.nix
+    ./clipboard.nix
+    ./fzf.nix
+    ./keymaps.nix
+    ./lualine.nix
+    ./nvim-tree.nix
+    ./toggleterm.nix
+    ./dashboard.nix
+    ./transparent.nix
+    ./semantictokens.nix
+    ./oil.nix
+    ./cmp-nvim-lua.nix
+    ./cmp-utils.nix
+    ./cmp-nvim-lsp.nix
+    ./cmp.nix
+    ./autotag.nix
+    #./trouble.nix
+
+
 
   ];
 }
