@@ -4,9 +4,9 @@
   plugins.dashboard = {
     settings = {
       preview.file_height = 20;
-      config.packages.enable = false;
+      config.packages.enable = true;
       hide.tabline = false;
-      change_to_vcs_root = true;
+      change_to_vcs_root = false;
       config = {
         footer = [
   

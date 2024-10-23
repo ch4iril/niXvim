@@ -41,7 +41,8 @@
     ./cmp-nvim-lsp.nix
     ./cmp.nix
     ./autotag.nix
-    #./trouble.nix
+    ./trouble.nix
+    ./luasnip.nix
 
 
 

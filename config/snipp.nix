@@ -16,7 +16,11 @@
       create_cmp_source = true;
       extended_filetypes = {
         typescript = [
+          "typescript"
+          "typescriptreact"
           "javascript"
+          "javascriptreact"
+
         ];
       };
       friendly_snippets = true;
