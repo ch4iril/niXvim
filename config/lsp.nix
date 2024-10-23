@@ -1,7 +1,13 @@
 { pkgs, ... }:
 {
   plugins.lsp.enable = true;
-  plugins.lsp.servers.nixd.enable = true;
+  plugins.lsp.servers.nixd = {
+    enable = true;
+    extraOptions = {
+      offset_encoding = "utf-8";
+    };
+  };
+
   plugins.lsp.servers.dartls.enable = true;
   plugins.lsp.servers.nixd.autostart = true;
   plugins.lsp.servers.ts_ls.enable = true;
@@ -23,9 +29,5 @@
     gi = "implementation";
     gt = "type_definition";
   };
-
-
-
-
 
 }
