@@ -11,14 +11,14 @@
     settings.sources = [
       { name = "nvim_lsp"; }
       { name = "luasnip"; }
-      { name = "path"; }
+      { name = "ultisnips"; }
+      { name = "cmdline"; }
       { name = "bffer"; }
     ];
   };
 
-  
-
  
+
   plugins.cmp.cmdline.typescript.completion.autocomplete = [
     "require('cmp.types').cmp.TriggerEvent.TextChanged"
   ];

@@ -43,8 +43,9 @@
     ./autotag.nix
     ./trouble.nix
     ./luasnip.nix
-
-
+    ./comment.nix
+    ./freindlysnippets.nix
+    ./tscontext.nix
 
   ];
 }

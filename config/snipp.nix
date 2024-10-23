@@ -20,6 +20,7 @@
           "typescriptreact"
           "javascript"
           "javascriptreact"
+	  "dart"
 
         ];
       };
