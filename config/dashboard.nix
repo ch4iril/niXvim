@@ -9,9 +9,11 @@
       change_to_vcs_root = true;
       config = {
         footer = [
-          "NixVim From Scratch"
-          "ch4iril@kumaha aing"
+  
+            "NixVim From Scratch"
         ];
+       
+
         header = [
         
                    "██████╗███████╗███████╗██████╗  ██████" 
