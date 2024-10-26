@@ -47,10 +47,5 @@
     ./nvim-snippets.nix
     
 
-
-
-
-
-
   ];
 }

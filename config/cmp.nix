@@ -1,60 +1,3 @@
-#{pkgs, ...}: {
-#  plugins = {
-#    cmp = {
-#      enable = true;
-#      package = pkgs.vimPlugins.nvim-cmp;
-#
-#      autoEnableSources = true;
-#      settings.sources = [
-#        {name = "luasnip";}
-#        {name = "path";}
-#        {name = "buffer";}
-#      ];
-#
-#      filetype = {
-#        typescript = {
-#          sources = [
-#            {
-#              name = "luasnip";
-#            }
-#          ];
-#        };
-#      };
-#
-#      cmdline.typescript.mapping = {
-#        "<C-Space>" = "cmp.mapping.complete()";
-#        "<C-e>" = "cmp.mapping.close()";
-#        "<C-u>" = "cmp.mapping.scroll_docs(-4)";
-#        "<C-d>" = "cmp.mapping.scroll_docs(4)";
-#        "<C-y>" = "cmp.mapping.confirm({ select = true })";
-#        "<CR>" = "cmp.mapping.confirm({ select = false })";
-#        "<up>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
-#        "<down>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
-#      };
-#
-#      filetype.typescript.completion.autocomplete = [
-#        "require('cmp.types').cmp.TriggerEvent.TextChanged"
-#      ];
-#
-#      filetype.typescript.completion.keyword_pattern = "[[\\%(-\\?\\d\\+\\%(\\.\\d\\+\\)\\?\\|\\h\\w*\\%(-\\w*\\)*\\)]]";
-#
-#      cmdline.typescript.view.entries = {
-#        name = "custom";
-#        selection_order = "top_down";
-#      };
-#
-#      filetype.typescript.completion.completeopt = "menu,menuone,noselect";
-#      cmdline.typescript.snippet.expand = ''
-#        function(args)
-#          require('luasnip').lsp_expand(args.body)
-#        end
-#      '';
-#    };
-#  };
-#}
-
-
-
 {
   plugins = {
     cmp-emoji = {
@@ -83,8 +26,8 @@
           ];
         };
         sources = [
-          { name = "nvim_lsp"; }
-          { name = "emoji"; }
+          {name = "nvim_lsp";}
+          {name = "emoji";}
           {
             name = "buffer"; # text within current buffer
             option.get_bufnrs.__raw = "vim.api.nvim_list_bufs";
@@ -98,10 +41,9 @@
             name = "luasnip"; # snippets
             keywordLength = 3;
           }
-          { name = "rg"; }
-          { name = "nvim_lua"; }
-          { name = "git"; }
-
+          {name = "rg";}
+          {name = "nvim_lua";}
+          {name = "git";}
         ];
 
         window = {
@@ -219,4 +161,3 @@
     -- }
        })  '';
 }
-

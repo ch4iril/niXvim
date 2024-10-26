@@ -27,5 +27,11 @@
       };
     };
       plugins.web-devicons.enable = true;
+      plugins.web-devicons.settings = 
+      {
+            color_icons = true;
+            strict = true;
+       };
+
   
 }
