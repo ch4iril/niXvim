@@ -40,7 +40,7 @@
       icon = "󰓩 ";
     }
     {
-      __unkeyed = "<leader>c";
+      __unkeyed-1 = "<leader>c";
       group = "Codesnap";
       icon = "󰄄 ";
       mode = "v";
@@ -54,7 +54,7 @@
       __unkeyed-1 = [
         {
           __unkeyed-1 = "<leader>f";
-          group = "Normal Visual Group";
+          group = "Find Files";
         }
         {
           __unkeyed-1 = "<leader>f<tab>";

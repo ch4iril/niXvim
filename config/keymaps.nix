@@ -11,7 +11,7 @@
         desc = "New file";
       };
     }
-
+     
     {
       mode = "n";
       key = "<leader>e";
@@ -131,9 +131,10 @@
         "n"
         "v"
       ];
-      key = "<leader>c";
+      key = "<leader>ca";
       action = "<cmd>lua vim.lsp.buf.code.action<cr>";
       options = {
+      silent = true;
         desc = "+code action";
       };
     }

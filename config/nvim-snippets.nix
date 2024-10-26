@@ -1,27 +1,16 @@
-{ pkgs, ... }:
-{
-
-  plugins.nvim-snippets.enable = true;
-
+{pkgs, ...}: {
   plugins.nvim-snippets = {
+    enable = true;
 
     package = pkgs.vimPlugins.nvim-snippets;
 
-  };
-
-  plugins.nvim-snippets.settings =
-
-    {
+    settings = {
       create_autocmd = true;
       create_cmp_source = true;
       extended_filetypes = {
         typescript = [
-          "typescript"
-          "typescriptreact"
           "javascript"
-          "javascriptreact"
-	  "dart"
-
+	  "typescript"
         ];
       };
       friendly_snippets = true;
@@ -29,13 +18,13 @@
         "all"
       ];
       ignored_filetypes = [
-        "haskel"
+        "lua"
       ];
       search_paths = [
         {
-          __raw = "vim.fn.stdpath('config') .. '/snippets'";
+          __raw = "vim.fn.stdpath('config') .. './snippets'";
         }
       ];
     };
-
+  };
 }

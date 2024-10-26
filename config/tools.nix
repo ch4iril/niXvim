@@ -25,8 +25,8 @@
   plugins.typescript-tools.settings.tsserverFilePreferences =
 
     {
-      tsserver_format_options = ''
-        {
+       ts_ls_format_options = ''
+       {
           allowIncompleteCompletions = false,
           allowRenameOfImportPath = false,
           ...

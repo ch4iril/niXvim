@@ -1,18 +1,15 @@
 {
   # Import all your configuration modules here
   imports = [
-
     {
       config = {
         opts = {
           number = true;
           relativenumber = true;
           shiftwidth = 2;
-
         };
-
       };
-
+     
     }
 
     ./bufferline.nix
@@ -23,9 +20,7 @@
     ./which-key.nix
     ./yanky.nix
     ./neo-tree.nix
-    ./airline.nix
     ./autosave.nix
-    ./snipp.nix
     ./clipboard.nix
     ./fzf.nix
     ./keymaps.nix
@@ -46,6 +41,16 @@
     ./comment.nix
     ./freindlysnippets.nix
     ./tscontext.nix
+    ./cmp-buffer.nix
+    ./cmp-path.nix
+    ./cmp-rg.nix
+    ./nvim-snippets.nix
+    
+
+
+
+
+
 
   ];
 }

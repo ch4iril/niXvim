@@ -1,15 +1,4 @@
-
-
-#{ pkgs, ...}:{
-#
-#plugins.treesitter.package = {
-#   plugins.treesitter.enable = true;
-#   extraPlugins = pkgs.vimPlugins.nvim-treesitter;
-# };
-#}
-
-{ pkgs, ...}:{
-
+{pkgs, ...}: {
   plugins.treesitter = {
     enable = true;
 
@@ -32,4 +21,3 @@
     ];
   };
 }
-
