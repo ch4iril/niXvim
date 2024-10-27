@@ -388,7 +388,7 @@
     {
       mode = "n";
       key = "<Tab>";
-      action = "<CMD>Telescope buffers sort_mru=true sort_lastused=true initial_mode=normal<CR>";
+      action = "<cmd>Telescope buffers sort_mru=true sort_lastused=true initial_mode=normal<cr>";
       options = {
         desc = "Next buffer";
       };
@@ -396,7 +396,7 @@
     {
       mode = "n";
       key = "<S-Tab>";
-      action = "<CMD>bprev<CR>";
+      action = "<cmd>bprev<cr>";
       options = {
         desc = "Previous buffer";
       };

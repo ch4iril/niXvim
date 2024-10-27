@@ -16,7 +16,6 @@
     ./lsp.nix
     ./colorscheme.nix
     ./treesitter.nix
-    ./tools.nix
     ./which-key.nix
     ./yanky.nix
     ./neo-tree.nix
@@ -45,6 +44,7 @@
     ./cmp-path.nix
     ./cmp-rg.nix
     ./nvim-snippets.nix
+    ./eslint.nix
     
 
   ];

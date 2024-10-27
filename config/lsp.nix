@@ -1,63 +1,78 @@
 {pkgs, ...}: {
-  plugins.lsp.enable = true;
-  plugins.lsp.servers.dartls.enable = true;
-  plugins.lsp.servers.rust_analyzer.installCargo = false;
-  plugins.lsp.servers.rust_analyzer.installRustc = false;
-  plugins.lsp-status.enable = true;
-  plugins.lsp.servers.tailwindcss.enable = true;
-  plugins.lsp.servers.tailwindcss = {
-    package = pkgs.tailwindcss-language-server;
-    cmd = [];
+  plugins.none-ls = {
+    enable = true;
+    enableLspFormat = false;
   };
 
-  # Lsp Capabilities
-  #plugins.lsp.capabilities = "capabilities";
-
-
-
-  # Lua
-  plugins.lsp.servers.lua_ls = {
+  plugins.lsp = {
     enable = true;
-    autostart = true;
-    package = pkgs.lua-language-server;
-  };
-
-  # Typescript
-  plugins.lsp.servers.ts_ls = {
-    enable = true;
-    autostart = true;
-    package = pkgs.typescript-language-server;
-   # cmd = {
-   #    typescript.applyCodeAction
-   #    arguments =  [tsp.CodeAction];
-   # 
-   #};
-  };
-
-  #NIXD
-  plugins.lsp.servers.nixd = {
-    enable = true;
-    package = pkgs.nixd;
-    autostart = true;
-    settings = {
-      nixpkgs = {
-        expr = "import <nixpkgs> { }";
-      };
-      formatting = {
-        command = ["alejandra"];
-        options = {
-          # nixos = {
-          #    expr =  (builtins.getFlake) "${./configuration.nix}".nixosConfigurations.CONFIGNAME.options;
-          # };
-
-          #home_manager = {
-          #  expr = builtins.getFlake (builtins.toString ./.).homeConfigurations.CONFIGNAME.options;
-          # };
+    servers.dartls = {
+      enable = true;
+      filetypes = ["dart"];
+    };
+    servers.tailwindcss.enable = true;
+    servers.lua_ls.enable = true;
+    servers.ts_ls = {
+      enable = true;
+      filetypes = [
+        "javascript"
+        "javascriptreact"
+        "typescript"
+        "typescriptreact"
+      ];
+      extraOptions = {
+        settings = {
+          javascript = {
+            inlayHints = {
+              includeInlayEnumMemberValueHints = true;
+              includeInlayFunctionLikeReturnTypeHints = true;
+              includeInlayFunctionParameterTypeHints = true;
+              includeInlayParameterNameHints = "all";
+              includeInlayParameterNameHintsWhenArgumentMatchesName = true;
+              includeInlayPropertyDeclarationTypeHints = true;
+              includeInlayVariableTypeHints = true;
+            };
+          };
+          typescript = {
+            inlayHints = {
+              includeInlayEnumMemberValueHints = true;
+              includeInlayFunctionLikeReturnTypeHints = true;
+              includeInlayFunctionParameterTypeHints = true;
+              includeInlayParameterNameHints = "all";
+              includeInlayParameterNameHintsWhenArgumentMatchesName = true;
+              includeInlayPropertyDeclarationTypeHints = true;
+              includeInlayVariableTypeHints = true;
+            };
+          };
         };
       };
     };
-    extraOptions = {
-      offset_encoding = "utf-8";
+    servers.nixd = {
+      enable = true;
+      package = pkgs.nixd;
+      autostart = true;
+      settings = {
+        nixpkgs = {
+          expr = "import <nixpkgs> { }";
+        };
+        formatting = {
+          command = ["alejandra"];
+        };
+      };
+      extraOptions = {
+        offset_encoding = "utf-8";
+      };
+    };
+  };
+
+  plugins = {
+    conform-nvim = {
+      settings = {
+        formatters_by_ft.javascript = ["prettier"];
+        formatters_by_ft.typescript = ["prettier"];
+        formatters_by_ft.javascriptreact = ["prettier"];
+        formatters_by_ft.typescriptreact = ["prettier"];
+      };
     };
   };
 
@@ -69,7 +84,4 @@
     gi = "implementation";
     gt = "type_definition";
   };
-
-
-
 }

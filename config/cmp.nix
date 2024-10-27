@@ -89,15 +89,7 @@
     cmp-cmdline = {
       enable = true;
     }; # autocomplete for cmdline
-    #cmp-git = {
-    #  enable = true;
-    #  settings = {
-    #    gitlab = {
-    #      hosts = [ "gitlab.dnm.radiofrance.fr" ];
-    #    };
-    #  };
-    #}; # git commit messages
-  };
+      };
   extraConfigLua = ''
           luasnip = require("luasnip")
           kind_icons = {

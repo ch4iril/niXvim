@@ -4,7 +4,7 @@
     package = pkgs.vimPlugins.luasnip;
     settings = {
       enable_autosnippets = true;
-      store_selection_keys = "<c-y>";
+      store_selection_keys = "<Tab>";
     };
     filetypeExtend = {
       lua = [
