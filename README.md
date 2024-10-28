@@ -17,8 +17,14 @@ nix run .
 
 
 
+Mohon di perhatikan, ini menggunakan standalone module
+Untuk memulai anda harus menginisial terlebih dahulu dengan menjalankan command dibawah ini
 
+## command di bawah akan generate folder config, flake.nix ##
+nix flake init --template github:nix-community/nixvim
 
+## setelah itu, untuk mengaktifkan atau running, silahkan jalankan command dibawah ini
+nix run .
 
 Requirement :
 
