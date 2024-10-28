@@ -17,6 +17,13 @@ nix run .
 
 
 
+
+### untuk anda yang download secara clone, abaikan command nix flake init --template github:nix-community/nixvim,
+### karena command ini akan generate folder config dan flake
+
+-------------------------------------------------------
+### JIKA ANDA AKAN MEMULAI DARI AWAL ###
+
 Mohon di perhatikan, ini menggunakan standalone module
 Untuk memulai anda harus menginisial terlebih dahulu dengan menjalankan command dibawah ini
 
