@@ -18,7 +18,8 @@ nix run .
 
 
 
-### untuk anda yang download secara clone, abaikan command nix flake init --template github:nix-community/nixvim,
+### untuk anda yang download secara clone,
+### abaikan command nix flake init --template github:nix-community/nixvim,
 ### karena command ini akan generate folder config dan flake
 
 -------------------------------------------------------
