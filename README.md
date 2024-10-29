@@ -40,7 +40,7 @@ Requirement :
 - Device system x86_64-linux | aarch64-linux | x86_64-darwin | aarch64-darwin 
 
 
-seandainya ingin mencoba saja, silahkan gunakan cara seperti dibawah ini!
+Seandainya ingin mencoba saja tanpa install atau build, silahkan gunakan cara seperti dibawah ini!
 
      nix run 'github:ch4iril/niXvim'
 
